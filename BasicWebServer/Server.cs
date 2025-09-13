@@ -68,9 +68,9 @@ public static class Server
     
     public static void Log(HttpListenerRequest request)
     {
-        string[] parts = request.Url.AbsoluteUri.Split('/');
-        string path = string.Join("/", parts.Skip(3));
-        Console.WriteLine(request.RemoteEndPoint + " " + request.HttpMethod + " /" + path);
+string[] parts = request.Url.AbsoluteUri.Split('/');
+string path = string.Join("/", parts.Skip(3));
+Console.WriteLine(request.RemoteEndPoint + " " + request.HttpMethod + " /" + path);
     }
 }
 
